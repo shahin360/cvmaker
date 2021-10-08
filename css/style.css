@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 10px solid white;
+  }
+  input[type=file]{
+  padding:10px;
+  background-color: rgb(17, 66, 228);
+  }
+  .all_output_contact p{
+    
+   
+}
+
+#template{
+    background-color: rgb(17, 36, 88);
+    color:white;
+   
+}

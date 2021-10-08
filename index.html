@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second template</title>
+    <link rel="stylesheet" href="css/bootstrap_min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/9728b5bd23.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+    <!--=============== header section ===================-->
+    <div class="header bg-dark py-5">
+        <div class="header-content text-center">
+           <div class="container">
+            <p class="h5 font-weight-bold text-white">Make Your Won Cv for Drop to the Jov Application</p>
+           </div>
+        </div>
+    </div>
+    <!--============== form_content_section==================-->
+    <section>
+        <div class="form-content-section">
+            <div class="container">
+                <div class="row">
+                    <!--=========== form section ================-->
+                    <div class="col-lg-8 bg-light p-5 mt-2">
+                        <form action="" class="">
+                            <div class="form-group">
+                                <input type="text" name="" required placeholder="Full Name" 
+                                class="form-control form-control-sm" id="nm1">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="" required  placeholder="Phone Number"
+                                 class="form-control form-control-sm" id="phn">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="" required  placeholder="Example@gmail.com"
+                                 class="form-control  form-control-sm" id="eml">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="" required  class="form-control form-control-sm" 
+                                placeholder="Address" id="ad" >
+                            </div>
+                            <div class="form-group">
+                                <input type="date" class="form-control  form-control-sm" name="" id="dtm">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="" class="form-control form-control-sm"
+                                 required placeholder="Profession" id="Profsn">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="" class="form-control form-control-sm"
+                                 required placeholder="Language" id="lang">
+                            </div>
+                            <div class="form-group">
+                                <textarea name="" class="form-control form-control-sm" 
+                                id="yourself" cols="30" rows="3">
+
+                                </textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <textarea name="" class="form-control form-control-sm" 
+                                id="skill" cols="30" rows="3">
+
+                                </textarea>
+                            </div>
+                            <div class="form-group">
+                                <textarea name="" class="form-control form-control-sm"
+                                 id="exp" cols="30" rows="3">
+                                    
+                                </textarea>
+                            </div>
+                            <div class="form-group">
+                                <textarea name="" class="form-control form-control-sm"
+                                 id="edu" cols="30" rows="3">
+                                    
+                                </textarea>
+                            </div>
+                            <div class="form-group">
+                                <textarea name="" class="form-control form-control-sm"
+                                 id="cer" cols="30" rows="3">
+                                    
+                                </textarea>
+                            </div>
+                            <div class="form-group">
+                                <input type='file' class="form-control" onchange="Myfunction(this);" />
+                                <p class="small text-meuted">Upload Your Profile Picture </p>
+                               
+                            </div>
+
+                        </form>
+                        <button class="btn btn-primary" onclick="Myfunction()">submit</button>
+                    </div>
+                </div>
+            </div>
+            
+           <!---============Output section=================-->
+           <div class="container" id="template">
+                <div class="p-4">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="image py-2 text-center bg-primary" style="border-radius: 13px;">
+                            <img id="blah" src="" alt=""/>
+                            <p id="output1" class="text-white h2 font-weight-bold"></p>
+                        </div>
+                    </div>
+                </div>   
+                 <!--============= contact and description section ============-->
+                 <div class="row">
+                    <div class="col-lg-5">
+                        <div class="all_output_contact">
+                            <p id="output1" class="text-white h1"></p>
+                            <h4 class="font-weight-bold">Contact Me</h4>
+                            <p class="font-weight-bold">phone:-</p>
+                            <p id="output2"></p>
+                            <p class="font-weight-bold">Email</p>
+                            <p id="output3"></p>
+                            <address class="font-weight-bold">Address</address>
+                            <p id="output4"></p>
+                            <p class="font-weight-bold">Date Of Birdth</p>
+                            <p id="output5"></p>
+                            <p class="font-weight-bold">Profession</p>
+                            <p id="output6"></p>
+                            <p class="font-weight-bold">Language</p>
+                            <p id="lan_output"></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="all_output">
+                            <p id="output7"></p>
+                            <p class="font-weight-bold">About yourself</p>
+                            <hr style="height: 1px; background-color: rgb(22, 130, 253);">
+                            <p id="output8"></p>
+                            <p class="font-weight-bold">Skill</p>
+                            <hr style="height: 1px; background-color: rgb(22, 130, 253);">
+                            <p id="Skill_output"></p>
+                            <p class="font-weight-bold">Experance</p>
+                            <hr style="height: 1px; background-color: rgb(22, 130, 253);">
+                            <p id="exp_output"></p>
+                            <p class="font-weight-bold">Education</p>
+                            <hr style="height: 1px; background-color: rgb(22, 130, 253);">
+                            <p id="edu_output" class="pt-3"></p>
+                            <p class="font-weight-bold">Certifications</p>
+                            <hr style="height: 1px; background-color: rgb(22, 130, 253);">
+                            <p id="cer_output" class="py-4"></p>
+                        </div>
+                    </div>
+             </div>
+            </div>
+        </div>
+         <!--download pdf section-->
+         <div class="row text-center p-2">
+            <div class="col-lg">
+            <button class="btn btn-primary" id="download">Download Pdf</button>
+            </div>
+        </div> 
+        </div>
+                                    
+    </section>
+
+
+
+
+
+
+
+
+             
+   
+   
+    
+    
+    
+    
+
+
+
+    <script src="js/slim_min.js"></script>
+    <script src="js/proper_min.js"></script>
+    <script src="js/bootstrap_min.js"></script>
+    <script src="js/pdf.js"></script>
+    <script src="js/style.js"></script>
+</body>
+</html>
